@@ -75,28 +75,31 @@
 					We’d love to hear from you. If you have general questions for us, please submit the form below. We'll respond quickly with an answer.
 				</p>
 				<br>
-					<form onsubmit="myFunction()">
+
+					<script type="text/javascript">var submitted=false;</script>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://CONFIRMATION-PAGE.html';}"></iframe>
+					<form action="https://docs.google.com/forms/d/18z5UCV4oy4P9YJfyBvPDV0wBNO6-XJ2ZMSAMzYsYbzY/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
 						<div class="row">
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Name">
+								<input class="form-control" type="text" placeholder="Name" name="entry.1360495597" id="entry_1360495597">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Email">
+								<input class="form-control" type="text" placeholder="Email" name="entry.1121479066" id="entry_1121479066">
 							</div>
 							<div class="col-sm-4">
-								<input class="form-control" type="text" placeholder="Phone">
+								<input class="form-control" type="text" placeholder="Phone" name="entry.1392140188" id="entry_1392140188">
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="col-sm-12">
-								<textarea placeholder="Type your message here..." class="form-control" rows="9"></textarea>
+								<textarea placeholder="Type your message here..." class="form-control" rows="9" name="entry.2073833308" id="entry_2073833308"></textarea>
 							</div>
 						</div>
 						<br>
 						<div class="row">
 							<div class="text-right">
-								<input class="btn btn-action" type="submit" value="Send message">
+								<input class="btn btn-action" type="submit" value="Send message" name="submit" id="ss-submit">
 							</div>
 						</div>
 					</form>
