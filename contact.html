@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
 	<link rel="stylesheet" href="assets/css/main.css">
 
+	<link rel="stylesheet" href="assets/css/jquery-ui.min.css">	
+	<!-- <link rel="stylesheet" href="assets/css/jquery.ui.theme.font-awesome.css">	 -->
+
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -77,7 +80,7 @@
 				<br>
 
 					<script type="text/javascript">var submitted=false;</script>
-					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://CONFIRMATION-PAGE.html';}"></iframe>
+					<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('<div/>').html('Your feedback is submitted, our specialist will respond to it ASAP, thank you!').dialog({resizable: false, height:180, modal: true, buttons: {'Dismiss': function() {$( this ).dialog( 'close' );}}});}"></iframe>
 					<form action="https://docs.google.com/forms/d/18z5UCV4oy4P9YJfyBvPDV0wBNO6-XJ2ZMSAMzYsYbzY/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
 						<div class="row">
 							<div class="col-sm-4">
@@ -184,8 +187,9 @@
 
 
 	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
-	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery-ui.min.js"></script>
 	<script src="assets/js/headroom.min.js"></script>
 	<script src="assets/js/jQuery.headroom.min.js"></script>
 	<script src="assets/js/template.js"></script>
